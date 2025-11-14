@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE FINALS | 고객지원</title>
+  <link rel="stylesheet" href="style.css"> <!-- 공통 스타일 -->
+  <link rel="stylesheet" href="support.css"> <!-- 고객지원 전용 스타일 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 네비게이션바 -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="imgl.svg" alt="The Finals Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="https://store.steampowered.com/app/2073850/THE_FINALS/?l=koreana&curator_clanid=32593821">게임플레이</a></li>
+        <li><a href="about.html">게임소개</a></li>
+        <li><a href="esports.html">Esports</a></li>
+        <li><a href="support.html">고객지원</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== 게임 배너 ===== -->
+  <section class="support-banner">
+    <img src="imgbanner.jpg" alt="게임 배너">
+    <div class="banner-overlay"></div>
+    <h1 class="animate">THE FINALS 고객지원</h1>
+  </section>
+
+  <!-- ===== 권장사양 섹션 ===== -->
+  <section class="specs-section">
+    <div class="specs-inner animate">
+      <h2>권장 사양</h2>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <h3>운영체제</h3>
+          <p>Windows 10 64-bit 이상</p>
+        </div>
+        <div class="spec-item">
+          <h3>CPU</h3>
+          <p>Intel Core i7-8700 / AMD Ryzen 5 3600 이상</p>
+        </div>
+        <div class="spec-item">
+          <h3>GPU</h3>
+          <p>NVIDIA GeForce RTX 2070 / AMD Radeon RX 5700 이상</p>
+        </div>
+        <div class="spec-item">
+          <h3>RAM</h3>
+          <p>16GB 이상</p>
+        </div>
+        <div class="spec-item">
+          <h3>저장 공간</h3>
+          <p>50GB 이상의 여유 공간</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 고객문의 섹션 ===== -->
+  <section class="support-section">
+    <div class="support-inner">
+      <h2 class="animate">문의하기</h2>
+      <p class="animate">게임 이용 중 발생한 문제나 문의사항을 아래 양식을 통해 보내주세요.</p>
+
+      <div class="contact-form animate">
+        <form action="https://formspree.io/f/xkgkgywk" method="POST">
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="_replyto" placeholder="example@email.com" required>
+
+          <label for="subject">제목</label>
+          <input type="text" id="subject" name="subject" placeholder="문의 제목" required>
+
+          <label for="message">내용</label>
+          <textarea id="message" name="message" placeholder="문의 내용을 입력하세요" required></textarea>
+
+          <button type="submit" class="btn">문의 보내기</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 라이선스 바 -->
+  <div class="license">
+    <p>
+      THE FINALS, its logos, characters, artwork, and all associated assets are the exclusive property of their respective owners. Unauthorized use, reproduction, or distribution of any content without explicit permission is strictly prohibited. All trademarks, service marks, and copyrights are used for identification purposes only.
+    </p>
+  </div>
+
+  <!-- JS -->
+  <script src="support.js"></script>
+</body>
+</html>

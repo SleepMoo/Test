@@ -1,0 +1,87 @@
+/* ===== 게임소개 전용 CSS ===== */
+.feature-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.feature-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.feature-inner {
+  position: relative;
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.feature-left img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.feature-right {
+  max-width: 600px;
+}
+
+.feature-right h2 {
+  font-size: 2.8rem;
+  color: #ffcb05;
+  margin-bottom: 20px;
+}
+
+.feature-right p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+/* 등장 애니메이션 */
+.feature-inner.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 라이선스 */
+.license {
+  background: #111;
+  color: #ccc;
+  padding: 40px 60px;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-top: 1px solid #333;
+  text-align: left;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .feature-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature-left img {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+  .feature-right {
+    max-width: 90%;
+  }
+}
